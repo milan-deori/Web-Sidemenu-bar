@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main_box{
+  background-image: url("photo.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.btn_one i{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position:absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidebar_menu{
+    position: fixed;
+   left: -300px; 
+   height: 100vh;
+   width: 300px;
+   background-color: rgba(255,255,255, 0.1);
+   box-shadow: 0 0 6px rgba(255,255,255, 0.5);
+   transition: all 0.3s linear;
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    background-color: rgba(255,255,255, 0.2);
+    box-shadow: 0 2px 4px rgba(255,255,255, 0.4);
+    height: 60px;
+    
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar_menu .btn_two i{
+    color: gray;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    /*opacity: 0;*/
+    cursor: pointer;
+}
+.menu{
+    color: azure;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.menu i,a{
+    color: azure;
+    text-decoration-line: none;
+    font-size: 20px;
+
+}
+.menu i{
+    padding-right: 8px;
+}
+
+.social_media{
+ color: white;
+ opacity: 0.5;
+ position: absolute;
+ left: 20%;
+ bottom: 40px;
+}
+
+.social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0 10px;
+
+}
+#check{
+    display: none;
+}
+
+.menu li:hover{
+    box-shadow: 0 0 6px rgba(255,255,255, 0.5);
+}
+.btn_one i:hover{
+  font-size: 33px;
+}
+
+.btn_two i:hover{
+    font-size: 30px;
+}
+
+.social_media i:hover{
+    opacity: 1;
+    font-size: 30px;
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+p{
+    position: absolute;
+    font-weight: 1200px;
+    color: azure;
+    padding-top: 8px;
+    padding-left: 45%;
+    padding-right: 0;
+    font-family:24px Poppnis,Arial,sans-serif;
+    font-size: 25px;
+   
+
+}
+span{
+    color: yellow;
+}
